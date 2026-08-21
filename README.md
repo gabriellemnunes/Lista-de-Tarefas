@@ -24,4 +24,5 @@ os botões **Concluir** ou **Excluir** para organizar a lista.
 
 ## Autora
 
-Desenvolvido por Gabrielle Nunes.
+Desenvolvido por Gabrielle Nunes. 
+https://lighthearted-treacle-616a75.netlify.app
