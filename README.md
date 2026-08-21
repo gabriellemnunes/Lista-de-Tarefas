@@ -28,3 +28,4 @@ Abra o arquivo `index.html` no navegador.
 4. Em **Build and deployment**, escolha **Deploy from a branch**.
 5. Selecione a branch `main`, a pasta `/ (root)` e clique em **Save**.
 6. Aguarde o GitHub mostrar o endereço público da página.
+https://lighthearted-treacle-616a75.netlify.app
