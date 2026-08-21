@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma lista de tarefas simples e responsiva.">
+  <title>Minha Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Minha Lista</h1>
+    <p>Organize as tarefas do seu dia</p>
+  </header>
+
+  <main>
+    <section class="tarefas" aria-labelledby="titulo-tarefas">
+      <h2 id="titulo-tarefas">Tarefas</h2>
+
+      <form id="form-tarefa">
+        <label for="nova-tarefa" class="sr-only">Nova tarefa</label>
+        <input
+          id="nova-tarefa"
+          type="text"
+          placeholder="Digite uma tarefa"
+          maxlength="80"
+          required
+        >
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <p id="mensagem-vazia">Nenhuma tarefa adicionada.</p>
+      <ul id="lista" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto desenvolvido com HTML, CSS e JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #263238;
+  background: #f3f6f8;
+}
+
+header {
+  padding: 32px 20px;
+  color: white;
+  text-align: center;
+  background: #1976d2;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+main {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.tarefas {
+  padding: 28px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tarefas h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  min-width: 0;
+  padding: 12px;
+  flex: 1;
+  border: 1px solid #b0bec5;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 2px solid #90caf9;
+  border-color: #1976d2;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background: #1976d2;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #125aa0;
+}
+
+#mensagem-vazia {
+  margin-top: 24px;
+  color: #607d8b;
+  text-align: center;
+}
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #eef4f8;
+}
+
+li span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+li.concluida span {
+  color: #78909c;
+  text-decoration: line-through;
+}
+
+.botao-concluir {
+  background: #2e7d32;
+}
+
+.botao-excluir {
+  background: #c62828;
+}
+
+footer {
+  padding: 20px;
+  color: #546e7a;
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 24px 16px;
+  }
+
+  main {
+    padding: 24px 14px;
+  }
+
+  .tarefas {
+    padding: 20px 16px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  li {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  li span {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  li button {
+    flex: 1;
+  }
+}
